@@ -2,12 +2,13 @@
 
 ## 1.Получения ssh-ключа: <br>
 Заходим в консоль и прописываем - `ssh-keygen` <br>
-После проходим по пути: `Диск:\Users\<ваша-учетка>\.ssh\id_rsa.pub` <br>
+После проходим по пути: `<Диск>:\Users\<ваша-учетка>\.ssh\id_rsa.pub` <br>
 ## 2.Подключение к облачной машины: <br> 
-Заходим в консоль и прописываем `ssh user@hostname` <br>
+Заходим в консоль и прописываем `ssh <user>@<ваш публичный ssh-ключ>` <br>
 
 ## 3.Настройка облачной машины: <br>
 [Я следовал по документации](https://docs.docker.com/engine/install/ubuntu/) <br>
+<br>
 `sudo apt-get update` <br> 
 `sudo install -m 0755 -d /etc/apt/keyrings` <br>
 `sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc` <br>
